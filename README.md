@@ -5,7 +5,7 @@ Upload/Resize/Watermarking system for photos, primarily designed for BDE Saint J
 
 ## Prerequisites
 
- * PHP 5.0+ with GD enabled
+ * PHP 5.0+
  * PHP shell_exec allowed
  * Python with Image modules
  * Web server or web hosting
@@ -13,7 +13,7 @@ Upload/Resize/Watermarking system for photos, primarily designed for BDE Saint J
 ## Installation
 
  * Copy the files in your web root
- * Edit config.php accordingly
+ * Edit preview/config.php accordingly
  * Start using the software
 
 ## Third party softwares
