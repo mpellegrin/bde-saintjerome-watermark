@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+div#container {
+	/*height: 680px;*/
+}
+div#container a {
+	text-decoration: none;
+	border: none;
+	color: #000000;
+}
+div#container div#thumbs {
+	display: block;
+	float: left;
+	width: 30%;
+	/*min-width: 150px;*/
+	min-height: 680px;
+}
+div#container ul.thumbs {
+	list-style: none;
+	padding: 0;
+	margin-top: 1em;
+}
+div#container ul.thumbs li {
+	display: inline-block;
+	width: 20%;
+}
+div#container ul.thumbs li img {
+	width: 100%;
+	height: auto;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+div#container div.content {
+	width: 70%;
+	float: left;
+}
+div#container div#slideshow, div#container div.slideshow-container {
+	position: relative;
+}
+div#container div#slideshow span.image-wrapper {
+	position: absolute;
+	top: 0;
+}
+div#container div#slideshow span.image-wrapper img {
+	width: 100%;
+	height: auto;
+	max-height: 600px;
+	border: solid 1px #ccc;
+	padding: 2px;
+}
+
+div#container div.pagination a, div#container div.pagination span.current {
+	display: inline-block;
+	color: #000000;
+	padding: 0.25em;
+	border: solid 1px #ccc;
+	margin: 0 3px;
+}
+div#container div.pagination span.current {
+	background: #000000;
+	color: #ffffff;
+	border: none;
+}
+div#container div.nav-controls, div#container div.ss-controls, div#container div.controls {
+	display: inline-block;
+}
+div#container div.ss-controls a.play {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 3px;
+}
+div#container div.ss-controls a.pause {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 3px;
+}
+div#container div.nav-controls a.prev {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 3px;
+}
+div#container div.nav-controls a.next {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 3px;
+}
+div#container div.loader {
+	background-image: url(../images/loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 850px;
+	height: 650px;
+	z-index: 50;
+}
+
+div#container .thumb-album {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin: 5px;
+	width: 106px;
+	height: 175px;
+}
+div#container .thumb-wrapper {
+	border: 1px solid #000;
+	padding: 2px;
+	background: #eee;
+}
+div#container .image-caption.previous {
+	display: none;
+}
+div#container #caption {
+	display: inline-block;
+}
+div#container #caption .caption>* {
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 3px;
+}
+div#container #caption .vote img {
+	border: 0;
+	height: 20px;
+	width: auto;
+	vertical-align: middle;
+}
+div#container #caption .score {
+	color: #060;
+}
+div#container #caption .score.score-negative {
+	color: #f00;
+}
+
+#form_send_to {
+	margin: 1em 0;
+	border: solid 3px #c0c0ff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#form_send_to label {
+	display: block;
+}
+#form_send_to input[type="text"] {
+	width: 20em;
+}
+
+.info_message {
+	margin: 1em 0;
+	padding: 0.5em;
+	border: solid 2px #c0c0c0;
+	background: #e0e0e0;
+}
+
+#albums li {
+	margin-bottom: 0.5em;
+}

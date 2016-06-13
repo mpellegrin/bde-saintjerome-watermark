@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+
+	<!-- JavaScript Includes -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="assets/js/jquery.knob.js"></script>
+
+	<!-- jQuery File Upload Dependencies -->
+	<script src="assets/js/jquery.ui.widget.js"></script>
+	<script src="assets/js/jquery.iframe-transport.js"></script>
+	<script src="assets/js/jquery.fileupload.js"></script>
+	
+	<!-- Steps JS and CS -->
+	<link type="text/css" rel="stylesheet" href="assets/css/steps.css"></style>
+	<script type="text/javascript" src="assets/js/steps.js"></script>
+
+	<!-- Callbacks -->
+	<script type="text/javascript" src="assets/js/callbacks.js"></script>
+
+	<!-- upload JS file -->
+	<script src="assets/js/upload.js"></script>
+
+	<!-- Google web fonts -->
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+	<!-- The upload CSS file -->
+	<link href="assets/css/upload.css" rel="stylesheet" />
+</head>
+<body>
+<!-- multistep form -->
+<div id="msform">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active">Event name</li>
+		<li>Add photos</li>
+		<li>Watermark</li>
+		<li>Sharing</li>
+	</ul>
+	<!-- Messages area -->
+	<div class="messages"><div class="inner"></div></div>
+	<!-- fieldsets -->
+	<fieldset>
+		<h2 class="fs-title">Name and event date</h2>
+		<h3 class="fs-subtitle">This will be the album name</h3>
+		<input type="text" name="event_name" placeholder="Beach Party - december 2015" />
+		<input type="button" name="step1" class="next action-button" value="Next" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">Add photos</h2>
+		<h3 class="fs-subtitle">Drag and drop photos or click on Browse</h3>
+		<form id="upload" method="post" action="callbacks/upload.php" enctype="multipart/form-data">
+			<div id="drop">
+				Drag and drop files here
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+
+		<input type="button" name="previous" class="previous action-button" value="Previous" />
+		<input type="button" name="step2" class="next action-button" value="Next" />
+	</fieldset>
+	<fieldset>
+		<h2 class="fs-title">watermark</h2>
+		<h3 class="fs-subtitle">Don't close this page until the end of the operation</h3>
+		<input type="text" name="watermark" placeholder="12/01/2015 - Beach Party - My Event" />
+		<input type="button" name="previous" class="previous action-button" value="Previous" />
+		<input type="button" name="step3" class="next action-button" value="Next" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">Sharing</h2>
+		<h3 class="fs-subtitle">The following link can be used to preview photos</h3>
+		<p><a href="#" id="preview_link">Link to photos</a></p>
+		<input type="button" name="previous" class="previous action-button" value="Previous" />
+	</fieldset>
+</div>
+
+</body></html>
