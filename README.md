@@ -13,7 +13,7 @@ Upload/Resize/Watermarking system for photos, primarily designed for BDE Saint J
 ## Installation
 
  * Copy the files in your web root
- * Edit preview/config.php and preview/.htaccess accordingly
+ * Edit `preview/config.php` and `preview/.htaccess` accordingly
  * Start using the software
 
 ## Third party softwares
