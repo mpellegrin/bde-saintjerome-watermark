@@ -92,8 +92,9 @@ for PHOTO_NAME in PHOTOS_LIST:
 				IMAGE_PHOTO = IMAGE_PHOTO.resize(A, Image.ANTIALIAS)
 				#PHOTO_WIDTH,PHOTO_HEIGHT = A
 			else:
-				print PHOTO_NAME + ": Error while calculating scale"
-				exit()
+				#print PHOTO_NAME + ": Error while calculating scale"
+				#exit()
+				IMAGE_PHOTO = IMAGE_PHOTO.resize((MAX_WIDTH_DESTINATION, MAX_HEIGHT_DESTINATION), Image.ANTIALIAS)
 
 	PHOTO_WIDTH,PHOTO_HEIGHT = IMAGE_PHOTO.size
 
